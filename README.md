@@ -20,3 +20,22 @@ A web-based interactive tool designed to help developers visualize, customize, a
 1. Clone this repository:
    ```bash
    git clone [https://github.com/stephaniebrandao/css-playground.git]
+   
+2. Navigate to the project directory:
+
+   ```bash
+   cd css-playground
+
+3. Install dependencies:
+   ```bash
+   npm install
+
+4. Start the development server:
+   ```bash
+   npm run dev
+
+## 💡 How to use
+Simply use the sliders and color pickers in the control panel on the left to customize the card. Once you are satisfied with the look, click the "Copy Code 💾" button to copy the CSS properties directly to your clipboard.
+
+## 📝 License
+This project is open-source and available under the MIT License.
