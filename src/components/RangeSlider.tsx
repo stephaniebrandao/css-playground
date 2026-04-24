@@ -1,10 +1,10 @@
 import styles from "./rangerSlider.module.css"
 
 type RangeSliderCharacteristics = {
-  min: number,
-  max: number,
+  min?: number,
+  max?: number,
   label: string,
-  value: string,
+  value: number,
   onChange: (value: number) => any
 }
 
