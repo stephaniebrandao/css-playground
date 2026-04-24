@@ -1,7 +1,12 @@
 import styles from "./colorPick.module.css"
 
+type ColorPickCharacteristics = {
+    label: string,
+    value: string,
+    onChange: (value: string) => any
+}
 
-function ColorPickBackground ({label, value, onChange}) {
+function ColorPickBackground ({label, value, onChange}: ColorPickCharacteristics) {
     
     return (
         <div className={styles.colorPickContainer}>

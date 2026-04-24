@@ -1,4 +1,8 @@
-function Division({color}) {
+type DivisionCharacteristic = {
+  color: string
+}
+
+function Division({color}: DivisionCharacteristic) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
