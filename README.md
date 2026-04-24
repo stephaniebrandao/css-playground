@@ -1,73 +1,41 @@
-# React + TypeScript + Vite
+# 🎨 CSS Playground
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based interactive tool designed to help developers visualize, customize, and generate CSS styles for UI cards in real-time.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Real-time Preview:** See changes instantly as you adjust design properties.
+* **Customization Controls:** Modify border-radius, background color, text color, padding, shadow intensity, and font weight.
+* **One-Click Copy:** Easily export the generated CSS code to your clipboard for immediate use in your projects.
+* **Reset Functionality:** Quickly revert all changes to the original default state.
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React:** Used for building the user interface and managing component state.
+* **CSS Modules:** Provides scoped styling to ensure clean and maintainable CSS.
+* **Clipboard API:** Enables the copy-to-clipboard functionality.
 
-## Expanding the ESLint configuration
+## 📦 How to Run
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clone this repository:
+   ```bash
+   git clone [https://github.com/stephaniebrandao/css-playground.git]
+   
+2. Navigate to the project directory:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+   ```bash
+   cd css-playground
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+3. Install dependencies:
+   ```bash
+   npm install
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4. Start the development server:
+   ```bash
+   npm run dev
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💡 How to use
+Simply use the sliders and color pickers in the control panel on the left to customize the card. Once you are satisfied with the look, click the "Copy Code 💾" button to copy the CSS properties directly to your clipboard.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📝 License
+This project is open-source and available under the MIT License.
